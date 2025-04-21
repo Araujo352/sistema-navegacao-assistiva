@@ -242,60 +242,28 @@
     </section>
 
     <section id="arduino" class="tab-content">
-      <h2>Projeto com Arduino Uno</h2>
-      <p><strong>Objetivo:</strong></p>
-      <p>Desenvolver um dispositivo que ajude pessoas com deficiência visual a se deslocarem por ambientes internos, utilizando sensores para detectar obstáculos e fornecer feedback auditivo em tempo real.</p>
-
-      <p><strong>Materiais necessários:</strong></p>
-      <ul>
-        <li>Arduino Uno</li>
-        <li>Sensor ultrassônico (HC-SR04)</li>
-        <li>Buzzer ou speaker</li>
-        <li>Fios de conexão</li>
-        <li>Protoboard/placa de ensaio</li>
-        <li>Alimentação (bateria ou fonte de 9V)</li>
-        <li>Fita métrica</li>
-        <li>Caixa ou suporte para os componentes</li>
-      </ul>
-
-      <p><strong>Como funciona o projeto:</strong></p>
-      <ol>
-        <li><strong>Detecção de obstáculos:</strong> O sensor ultrassônico calcula a distância até objetos à frente.</li>
-        <li><strong>Feedback sonoro:</strong>
-          <ul>
-            <li>Som contínuo: obstáculo muito próximo (menos de 30 cm)</li>
-            <li>Som intermitente: distância intermediária (30 cm - 1 m)</li>
-            <li>Silêncio ou som leve: caminho livre (mais de 1 m)</li>
-          </ul>
-        </li>
-        <li><strong>Funcionamento:</strong> O usuário transporta o dispositivo, que ajuda na navegação por sons adaptativos.</li>
-      </ol>
-
-      <p><strong>Passo a passo da montagem:</strong></p>
-      <ul>
-        <li>Conecte o sensor ultrassônico ao Arduino (VCC no 5V, GND no GND, Trig no pino 9 e Echo no pino 10)</li>
-        <li>Conecte o buzzer ao pino 3 do Arduino</li>
-        <li>Use a protoboard para organizar as conexões</li>
-      </ul>
-
-      <iframe src="https://www.youtube.com/embed/YkMEjmswHjE" title="Exemplo de bengala eletrônica com Arduino" allowfullscreen></iframe>
+      <h2>Projeto com Arduino</h2>
+      <p>Estamos desenvolvendo um dispositivo assistivo utilizando Arduino Uno que auxilia pessoas com deficiência visual a se locomover com segurança.</p>
+      <p><a href="https://www.youtube.com/watch?v=4BdL67lqO5g" target="_blank">Confira nosso vídeo explicativo sobre o projeto</a></p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 - Projeto Escolar | Feira de Ciências e Tecnologia de Piriripi-PI
+    <p>&copy; 2025 Sistema de Navegação Assistiva. Todos os direitos reservados.</p>
   </footer>
 
   <script>
-    const tabs = document.querySelectorAll('.tab-button');
-    const contents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        contents.forEach(c => c.classList.remove('active'));
-        tab.classList.add('active');
-        document.getElementById(tab.dataset.tab).classList.add('active');
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove 'active' class de todas as abas
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Esconde todas as seções
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        
+        // Exibe a seção correspondente
+        document.getElementById(button.getAttribute('data-tab')).classList.add('active');
       });
     });
   </script>
