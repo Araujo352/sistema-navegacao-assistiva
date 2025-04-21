@@ -1,139 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sistema de Navegação Assistiva</title>
-  <!-- Ícones do Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    /* Customização para ajuste de imagem */
-    .imag {
-      height: 110px;
-      width: 160px;
+    /* Estilos adicionais para a galeria de imagens */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste automático das colunas */
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    .logo {
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
       border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      object-fit: cover; /* Ajusta a imagem sem distorção */
     }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
 
-  <header class="bg-blue-900 text-white py-6 px-4 flex flex-col sm:flex-row items-center justify-between">
-    <div class="flex items-center gap-4">
-      <img src="imagem escola.jpg" class="imag escola" alt="escola" />
-      <img src="logo.jpg.jpeg" class="imag logo" alt="Logo do projeto" />
-    </div>
-    <div class="text-center sm:text-left mt-4 sm:mt-0">
-      <h1 class="text-3xl font-semibold"><i class="fas fa-blind"></i> Sistema de <span class="text-teal-400">Navegação Assistiva</span></h1>
-      <h3 class="text-xl mt-2"><i class="fas fa-school"></i> Escola Municipal Cândido José da Silva</h3>
-      <h3 class="text-xl mt-2"><i class="fas fa-school"></i> Professores Responsáveis: Márcia e Edilson Araújo com apoio da equipe Gestora da Escola</h3>
-      <h4 class="text-lg mt-2"><i class="fas fa-users"></i> Equipe: Visão Além do Olhar</h4>
-      <p class="mt-2"><i class="fas fa-envelope"></i> <a href="mailto:silva.cj2017@gmail.com" class="text-teal-400">silva.cj2017@gmail.com</a></p>
-    </div>
+<body class="bg-gray-100">
+
+  <header class="bg-blue-500 text-white p-4 text-center">
+    <h1 class="text-3xl font-semibold">Sistema de Navegação Assistiva</h1>
   </header>
 
-  <nav class="bg-blue-800 text-white p-4 flex justify-center gap-4 flex-wrap">
-    <button class="tab-button bg-blue-600 hover:bg-blue-700 text-lg font-bold py-2 px-4 rounded-md transition-all duration-300">
-      <i class="fas fa-info-circle"></i> Sobre
-    </button>
-    <button class="tab-button bg-blue-600 hover:bg-blue-700 text-lg font-bold py-2 px-4 rounded-md transition-all duration-300">
-      <i class="fas fa-image"></i> Galerias
-    </button>
-    <button class="tab-button bg-blue-600 hover:bg-blue-700 text-lg font-bold py-2 px-4 rounded-md transition-all duration-300">
-      <i class="fas fa-microchip"></i> Nosso Projeto com Arduino
-    </button>
+  <nav class="bg-gray-200 p-4">
+    <ul class="flex justify-center space-x-6">
+      <li><a href="#introducao" class="text-blue-500 hover:underline">Introdução</a></li>
+      <li><a href="#funcionamento" class="text-blue-500 hover:underline">Funcionamento</a></li>
+      <li><a href="#projeto" class="text-blue-500 hover:underline">Nosso Projeto com Arduino</a></li>
+      <li><a href="#galeria" class="text-blue-500 hover:underline">Galeria</a></li>
+      <li><a href="#contato" class="text-blue-500 hover:underline">Contato</a></li>
+    </ul>
   </nav>
 
-  <main class="p-4">
-    <section id="sobre" class="tab-content active">
-      <h2 class="text-2xl text-blue-900 font-semibold">O que é Tecnologia Assistiva?</h2>
-      <p>Tecnologia assistiva define recursos que ampliam as habilidades funcionais de pessoas com deficiência, promovendo inclusão e independência.</p>
-      <p><a href="https://www.youtube.com/watch?v=0oB6m7zhbWE&t=641s" target="_blank" class="text-teal-400">Clique aqui para saber mais</a></p>
+  <main class="container mx-auto p-4">
 
-      <h2 class="text-2xl text-blue-900 font-semibold mt-6">Por que incluir pessoas com deficiência visual?</h2>
-      <p>Mais de 6,5 milhões de brasileiros possuem deficiência visual. A inclusão garante cidadania, combate o preconceito e valoriza a diversidade.</p>
-      <p><a href="http://portal.mec.gov.br/component/tags/tag/deficiencia-visual" target="_blank" class="text-teal-400">Clique aqui e saiba mais</a></p>
-
-      <h2 class="text-2xl text-blue-900 font-semibold mt-6">Como a Robótica pode ajudar?</h2>
-      <p>Com Arduino, sensores e atuadores, é possível criar bengalas inteligentes e dispositivos que auxiliam deficientes visuais na locomoção e segurança.</p>
-      <p><a href="https://www.youtube.com/watch?v=RTWsbC2vsyc&t=7s" target="_blank" class="text-teal-400">Clique aqui e saiba mais</a></p>
+    <!-- Seção de Introdução -->
+    <section id="introducao" class="my-8">
+      <h2 class="text-2xl font-semibold mb-4">Introdução</h2>
+      <p>Este sistema de navegação assistiva foi criado para melhorar a acessibilidade e facilitar o uso de dispositivos móveis para pessoas com necessidades especiais.</p>
     </section>
 
-    <section id="galerias" class="tab-content">
-      <h2 class="text-2xl text-blue-900 font-semibold">Galeria de Fotos</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-        <img src="blusa.jpg" alt="Blusa personalizada do projeto" class="rounded-lg shadow-lg">
-        <img src="foto 1.jpg.jpeg" alt="foto 1" class="rounded-lg shadow-lg">
-        <img src="foto 2.jpg.jpeg" alt="foto 2" class="rounded-lg shadow-lg">
-        <img src="foto 3.jpg.jpeg" alt="foto 3" class="rounded-lg shadow-lg">
-        <img src="foto 5.jpeg" alt="foto 5" class="rounded-lg shadow-lg">
-        <img src="foto 6.jpeg" alt="foto 6" class="rounded-lg shadow-lg">
-        <img src="foto 8.jpeg" alt="foto 7" class="rounded-lg shadow-lg">
-        <img src="foto 9.jpeg" alt="foto 9" class="rounded-lg shadow-lg">
+    <!-- Seção de Funcionamento -->
+    <section id="funcionamento" class="my-8">
+      <h2 class="text-2xl font-semibold mb-4">Como Funciona</h2>
+      <p>O sistema usa tecnologias como GPS, sensores de movimento e interação por voz para guiar o usuário de forma segura e eficiente.</p>
+    </section>
+
+    <!-- Seção Nosso Projeto com Arduino -->
+    <section id="projeto" class="my-8">
+      <h2 class="text-2xl font-semibold mb-4">Nosso Projeto com Arduino</h2>
+      <p>O projeto de navegação assistiva com Arduino foi desenvolvido com o objetivo de criar uma solução acessível e eficaz para pessoas com deficiências visuais e motoras. A principal ideia é usar o Arduino para coletar informações de sensores, processá-las e fornecer feedback para o usuário em tempo real.</p>
+
+      <h3 class="text-xl font-semibold mt-4">Componentes Utilizados:</h3>
+      <ul class="list-disc ml-6">
+        <li>Arduino Uno</li>
+        <li>Sensores de proximidade (ultrassônicos)</li>
+        <li>Sensor de distância LIDAR</li>
+        <li>Vibradores de feedback</li>
+        <li>Modulo Bluetooth</li>
+        <li>Fonte de alimentação</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-4">Como Funciona o Sistema:</h3>
+      <p>O sistema utiliza sensores de proximidade para detectar obstáculos ao redor do usuário. Os sensores ultrassônicos mapeiam a distância dos objetos e, com base nesse mapeamento, o Arduino processa as informações e envia comandos para os vibradores de feedback. O sistema também é capaz de interagir com o usuário através de um aplicativo móvel via Bluetooth, permitindo configurações e alertas personalizados.</p>
+
+      <h3 class="text-xl font-semibold mt-4">Aplicações do Projeto:</h3>
+      <ul class="list-disc ml-6">
+        <li>Navegação assistiva para deficientes visuais em ambientes internos.</li>
+        <li>Auxílio na locomoção de pessoas com mobilidade reduzida.</li>
+        <li>Desenvolvimento de dispositivos móveis que interagem com a tecnologia Arduino para melhor experiência.</li>
+      </ul>
+
+      <p class="mt-4">Este projeto visa proporcionar mais independência e segurança para as pessoas com necessidades especiais, permitindo que elas naveguem com maior facilidade em ambientes complexos, como shoppings, aeroportos, hospitais e outros lugares públicos.</p>
+    </section>
+
+    <!-- Seção de Galeria -->
+    <section id="galeria" class="my-8">
+      <h2 class="text-2xl font-semibold mb-4">Galeria</h2>
+      <div class="galeria">
+        <img src="imagens/foto1.jpg" alt="Imagem 1">
+        <img src="imagens/foto2.jpg" alt="Imagem 2">
+        <img src="imagens/foto3.jpg" alt="Imagem 3">
+        <img src="imagens/foto4.jpg" alt="Imagem 4">
       </div>
     </section>
 
-    <section id="arduino" class="tab-content">
-      <h2 class="text-2xl text-blue-900 font-semibold">Projeto com Arduino Uno</h2>
-      <p><strong>Objetivo:</strong> Desenvolver um dispositivo que ajude pessoas com deficiência visual a se deslocarem por ambientes internos, utilizando sensores para detectar obstáculos e fornecer feedback auditivo em tempo real.</p>
-
-      <p><strong>Materiais necessários:</strong></p>
-      <ul class="list-disc ml-6">
-        <li>Arduino Uno</li>
-        <li>Sensor ultrassônico (HC-SR04)</li>
-        <li>Buzzer ou speaker</li>
-        <li>Fios de conexão</li>
-        <li>Protoboard/placa de ensaio</li>
-        <li>Alimentação (bateria ou fonte de 9V)</li>
-        <li>Fita métrica</li>
-        <li>Caixa ou suporte para os componentes</li>
-      </ul>
-
-      <p><strong>Como funciona o projeto:</strong></p>
-      <ol class="list-decimal ml-6">
-        <li><strong>Detecção de obstáculos:</strong> O sensor ultrassônico calcula a distância até objetos à frente.</li>
-        <li><strong>Feedback sonoro:</strong>
-          <ul class="list-disc ml-6">
-            <li>Som contínuo: obstáculo muito próximo (menos de 30 cm)</li>
-            <li>Som intermitente: distância intermediária (30 cm - 1 m)</li>
-            <li>Silêncio ou som leve: caminho livre (mais de 1 m)</li>
-          </ul>
-        </li>
-        <li><strong>Funcionamento:</strong> O usuário transporta o dispositivo, que ajuda na navegação por sons adaptativos.</li>
-      </ol>
-
-      <p><strong>Passo a passo da montagem:</strong></p>
-      <ul class="list-disc ml-6">
-        <li>Conecte o sensor ultrassônico ao Arduino (VCC no 5V, GND no GND, Trig no pino 9 e Echo no pino 10)</li>
-        <li>Conecte o buzzer ao pino 3 do Arduino</li>
-        <li>Use a protoboard para organizar as conexões</li>
-      </ul>
-
-      <iframe src="https://www.youtube.com/embed/YkMEjmswHjE" title="Exemplo de bengala eletrônica com Arduino" allowfullscreen class="w-full h-72 mt-4 rounded-lg shadow-lg"></iframe>
+    <!-- Seção de Contato -->
+    <section id="contato" class="my-8">
+      <h2 class="text-2xl font-semibold mb-4">Contato</h2>
+      <p>Para mais informações, entre em contato pelo email: <a href="mailto:contato@exemplo.com" class="text-blue-500">contato@exemplo.com</a></p>
     </section>
+
   </main>
 
-  <footer class="bg-blue-900 text-white text-center py-4 mt-8">
-    &copy; 2025 - Projeto Escolar | Feira de Ciências e Tecnologia de Piriripi-PI
+  <footer class="bg-blue-500 text-white text-center p-4">
+    <p>&copy; 2025 Sistema de Navegação Assistiva. Todos os direitos reservados.</p>
   </footer>
 
-  <script>
-    // Adicionando funcionalidade para tabs
-    const tabs = document.querySelectorAll('.tab-button');
-    const contents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('bg-blue-700'));
-        contents.forEach(c => c.classList.remove('active'));
-        tab.classList.add('bg-blue-700');
-        document.getElementById(tab.textContent.toLowerCase().trim()).classList.add('active');
-      });
-    });
-  </script>
-
 </body>
+
 </html>
