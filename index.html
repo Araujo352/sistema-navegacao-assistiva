@@ -245,6 +245,12 @@
       <h2>Projeto com Arduino</h2>
       <p>Estamos desenvolvendo um dispositivo assistivo utilizando Arduino Uno que auxilia pessoas com deficiência visual a se locomover com segurança.</p>
       <p><a href="https://www.youtube.com/watch?v=4BdL67lqO5g" target="_blank">Confira nosso vídeo explicativo sobre o projeto</a></p>
+
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://forms.gle/Jpku3nUMBvyR7WjWA" target="_blank" style="display: inline-block; background-color: #0072ff; color: white; padding: 15px 30px; font-size: 1.2em; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: background 0.3s;">
+          <i class="fas fa-poll"></i> Envie sua Opinião
+        </a>
+      </div>
     </section>
   </main>
 
@@ -255,14 +261,11 @@
   <script>
     document.querySelectorAll('.tab-button').forEach(button => {
       button.addEventListener('click', () => {
-        // Remove 'active' class de todas as abas
         document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
-        
-        // Esconde todas as seções
+
         document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-        
-        // Exibe a seção correspondente
+
         document.getElementById(button.getAttribute('data-tab')).classList.add('active');
       });
     });
