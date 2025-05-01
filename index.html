@@ -109,7 +109,14 @@
     .tab-content p {
       font-size: 1.1em;
     }
-
+.galeria img {
+  width: 100%;
+  height: 160px; /* ou outro valor que funcione bem */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  display: block;
+}
     .galeria {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -119,7 +126,7 @@
 
     .galeria img {
       width: 100%;
-      height: 160px;
+      height: auto;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       object-fit: cover;
