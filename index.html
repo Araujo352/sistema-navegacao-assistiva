@@ -278,11 +278,122 @@
          </p>
       <h4>2.	OBJETIVO:</h3>
       <p>Desenvolver um dispositivo de baixo custo que ajude pessoas com deficiência visual a se deslocarem por ambientes internos, utilizando sensores para detectar obstáculos e fornecer feedback auditivo em tempo real. </p>
-      <p> </p>
-      <p> </p>
+      <p>No percurso deste trabalho foram realizadas algumas atividades para assim se chegar a um produto final (construção de um equipamento para deficientes visuais), as quais serão apresentadas por tópicos a seguir:
+      <h5>3.	METODOLOGIA</h5>
+          Planejamento e Discussão em Equipe
+        •	Levantamento de ideias até a escolha final do projeto;
+        •	Alinhamento de objetivos do projeto;
+        •	Distribuição de funções entre os membros da equipe;
+        •	Listagem e revisão dos componentes necessários, assim como do orçamento do projeto;
+         
+        •	Criação de uma rifa para levantar recursos para compra dos materiais Necessários;
+        	Entendendo o funcionamento de cada componente eletrônico utilizado no projeto, assim como montagem do Circuito Virtual (Tinkercad);
+        •	Estudo aprofundado pela equipe do funcionamento de cada dispositivo do kit de robótica utilizado no projeto;
+        •	Treinamento da equipe para uso da plataforma virtual Tinkercad;
+        •	Montagem do circuito usando os componentes virtuais;
+        •	Desenvolvendo o código do projeto para o teste virtual;
+        •	Simulação do projeto no ambiente virtual Tinkercad;
+        	Montagem do Circuito Físico;
+        •	Montagem do circuito usando os componentes reais;
+        •	Reproduzir o circuito virtual no protoboard com os componentes reais;
+        •	Verificar conexões, alimentação e organização;
+        •	Desenvolver e carregar o código na plataforma do Arduino;
+        •	Fixar a estrutura dos dispositivos em uma caixa e encaixar na cinta ou em outro dispositivo para o usuário utilizar o equipamento;
+        Finalização da documentação do projeto e preparação do Cenário de Teste;
+        •	Finalização da documentação do projeto com toda sua estrutura;
+        •	Criação do Banner de apresentação, assim como o designer da blusa para o projeto;
+        •	Preparação da equipe para a apresentação na feira de ciências e tecnologia;
+        •	Definição da área de testes (espaço livre de obstáculos fixos);
+        •	Montagem dos obstáculos com caixas de papelão;
+        •	Colocar objetos a diferentes distâncias para testar a precisão do sensor ultrassônico;
+        	Testes em Ambiente com Obstáculos;
+        •	Criação de obstáculos para o teste usando caixas de papelão;
+        •	Avaliar o funcionamento do projeto em um cenário real (teste na escola);
+        •	Observar respostas do sistema e possíveis melhorias.
+        </p>
+      <h6>3.1	MATERIAIS NECESSÁRIOS PARA A CONSTRUÇÃO DO KIT:</h6>
+      <p>
+        •	Kit Arduino Uno;
+        •	Notebook;
+        •	Sensor ultrassônico (HC-SR04) para detecção de obstáculos;
+        •	Buzzer ou speaker para feedback sonoro;
+         
+        •	Fios de conexão;
+        •	Protoboard;
+        •	Alimentação (bateria ou fonte de 9V).
+        •	Fita métrica (para ajustar o alcance dos sensores);
+        •	Caixa ou suporte para acomodar os componentes;
+      </p>
+      <h7>3.2	FUNCIONAMENTO DO PROJETO E APRESENTAÇÃO DE CADA ITEM.</h7>
+      <p>Detecção de obstáculos: O sensor ultrassônico é colocado na frente do usuário, e ele emite ondas sonoras que são refletidas por objetos à sua frente. O sensor calcula a distância até o obstáculo com base no tempo que a onda leva para voltar.
 
-
-      
+        1.	Feedback sonoro: O Arduino processa os dados do sensor e emite diferentes sons através do buzzer ou speaker para alertar o usuário sobre a proximidade dos obstáculos:
+        
+        •	Som contínuo: Quando o obstáculo está muito próximo (por exemplo, a menos de 20 cm).
+        •	Som intermitente (pulsante): Para distâncias intermediárias (por exemplo, entre 20 cm e 1 metro).
+        •	Silêncio ou som leve: Quando o caminho está livre ou a distância é grande (mais de 1 metro).
+        
+        2.	Funcionamento: O usuário pode carregar o dispositivo (por exemplo, em uma mochila ou cinto) e se movimentar pela sala ou corredor. À medida que se aproxima de um obstáculo, o feedback sonoro muda, ajudando a pessoa a ajustar sua direção.
+        </p>
+      <h8>4.	RESULTADOS</h8>
+      <p>Esse projeto é simples, prático e pode ser uma excelente forma de demonstrar como a tecnologia pode ser usada para melhorar a qualidade de vida de pessoas com deficiência visual. Por meio das ações pretendidas com o trabalho, o projeto proposto visa unir a teoria estudada durante os dias trabalhados com a montagem do dispositivo, relacionando assim a teoria de conceitos e do conteúdo teórico, a prática (na montagem do kits e reconhecimento de cada componente que será utilizado). Além disso, possibilita também uma visão diferenciada observando a relevância do projeto e interdisciplinaridade entre as demais disciplinas, reconhecendo também a questão principal que é a inclusão e o respeito a pessoas com necessidades especiais. A montagem do kit também possibilitou um novo recurso para deficientes visuais, no qual se destacou como positiva, podendo também haver novas melhorias
+        Com os estudos e pesquisas realizados nestes meses podemos aprimorar o kit para Versões futuras, sendo elas: Sistema de Navegação Assistiva para Deficientes Visuais, podemos adicionar duas funcionalidades importantes: localização do deficiente e um botão de SOS para situações de emergência.
+        </p>
+        <h8>MELHORIAS NO PROJETO PARA O FUTURO</h8>
+      <p>
+        1.	Localização do Deficiente Visual
+        
+        Para adicionar a funcionalidade de localização do deficiente, podemos usar um módulo GPS. Esse módulo permitirá rastrear a posição geográfica do usuário e, por exemplo, enviar a localização via Bluetooth para um dispositivo móvel ou para um servidor.
+        
+        Componentes necessários:
+        
+        •	Módulo GPS (como o NEO-6M): Para rastrear a localização do usuário.
+        •	Módulo Bluetooth (HC-05 ou HC-06): Para enviar a localização para um smartphone ou outro dispositivo.
+        •	Bateria adicional: Para alimentar os novos componentes.
+         
+        Como funciona:
+        
+        •	O módulo GPS irá ler as coordenadas de latitude e longitude, e, a cada intervalo de tempo, o Arduino pode atualizar essas coordenadas.
+        •	Com o módulo Bluetooth, o Arduino pode enviar essas coordenadas a um aplicativo no smartphone, permitindo que uma pessoa responsável saiba a localização do deficiente em tempo real.
+        
+        2.	Botão SOS
+        
+        O botão SOS serve como uma medida de segurança adicional para alertar quando o usuário estiver em perigo ou precisar de ajuda. Esse botão pode enviar um sinal de emergência para uma pessoa responsável, um centro de apoio ou até enviar uma mensagem automática.
+        
+        Componentes necessários:
+        
+        •	Botão de emergência: Um botão simples (push-button) para enviar um sinal de SOS.
+        •	Módulo de comunicação (Bluetooth ou GSM): Para enviar o alerta.
+        •	Alimentação adicional: Para suportar o módulo de comunicação extra.
+        
+        Como funciona:
+        
+        •	Quando o botão SOS for pressionado, o Arduino envia um sinal de alerta via Bluetooth ou GSM.
+        •	Caso use o Bluetooth, o sinal pode ser enviado para um aplicativo no smartphone, alertando alguém próximo sobre a situação de emergência.
+        •	Se usar o módulo GSM, é possível enviar um SMS ou realizar uma chamada telefônica automaticamente.
+        
+        3.	Integração das Melhorias
+        
+        •	Localização com GPS: Você pode integrar a localização com a funcionalidade do botão SOS. Por exemplo, ao pressionar o botão SOS, o sistema pode enviar não apenas o alerta, mas também a localização do usuário em tempo real para um responsável.
+        •	Feedback Audível para o SOS: Quando o botão SOS for pressionado, você pode adicionar um feedback auditivo (como um som contínuo no buzzer) para confirmar que o alerta foi enviado.
+         
+        Considerações Finais:
+        
+        •	Alimentação: Como estamos adicionando novos módulos (GPS, Bluetooth, e possivelmente GSM), o consumo de energia será maior. Certifique-se de usar uma fonte de alimentação adequada, como baterias recarregáveis.
+        •	Testes: Realize testes em diferentes cenários para garantir que o sistema funcione corretamente, tanto no aspecto de localização quanto no envio do alerta SOS.
+        
+        Benefícios das Melhorias:
+        
+        •	Segurança: O botão SOS aumenta a segurança do usuário, permitindo uma forma rápida de pedir ajuda.
+        •	Autonomia: A localização em tempo real proporciona mais independência para o deficiente visual, permitindo que seus responsáveis saibam onde ele está.
+        •	Tecnologia acessível: A utilização de sensores, GPS e Bluetooth pode ser uma solução simples e eficaz para melhorar a qualidade de vida de pessoas com deficiência visual.
+        Com essas melhorias, o projeto se torna ainda mais completo e pode ser muito útil na vida cotidiana de deficientes visuais, proporcionando maior segurança e autonomia.
+        </p>
+        <h8>REFERÊNCIAS BIBLIOGRÁFICAS</h8>
+      <p>BRUNO, M.M.G.; NASCIMENTO, R. A. L.D. Politica de acessibilidade :o que dizem as pessoas com deficiência visual . Educação e realidade , Porto alegre, v. 44, n. 1, p. 1- 15, 2019.
+        PONTES, P. R. S. Robótica educacional; Uma abordagem prática no ensino de lógica de programação. Tocantins: Vozes, 2021.
+        Diretoria de Tecnologia e inovação da Secretaria de Educação do Estado do Paraná: https://aluno.escoladigital.pr.gov.br/robotica.
+        </p>
       <div style="text-align: center; margin-top: 30px;">
         <a href="https://forms.gle/Jpku3nUMBvyR7WjWA" target="_blank" style="display: inline-block; background-color: #0072ff; color: white; padding: 15px 30px; font-size: 1.2em; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: background 0.3s;">
           <i class="fas fa-poll"></i> Envie sua Opinião
