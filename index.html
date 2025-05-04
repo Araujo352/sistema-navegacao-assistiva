@@ -272,102 +272,151 @@
       <h2>Projeto com Arduino</h2>
       <p>Estamos desenvolvendo um dispositivo assistivo utilizando Arduino Uno que auxilia pessoas com deficiência visual a se locomover com segurança.</p>
       <p><a href="https://www.youtube.com/watch?v=4BdL67lqO5g" target="_blank">Confira nosso vídeo explicativo sobre o projeto</a></p>
-
-        <h3>1. INTRODUÇÃO</h3>
-        <p>Em dias contemporâneos, as evoluções tecnológicas oportunizam acesso à informação, novas formas de comunicação, escolarização e inclusão a pessoas com deficiência, proporcionando acessibilidade e mais autonomia no seu cotidiano. A tecnologia assistiva surge como uma estratégia que visa possibilitar melhorias na qualidade de vida e aprendizagem, em especial a pessoas com deficiência visual (Bruno; Nascimento, 2019). Pensando nisto, foi idealizado um projeto que auxiliasse pessoas com deficiência visual em seu dia a dia, através de um dispositivo que ajuda no deslocamento, utilizando sensores para detectar obstáculos.</p>
-        <p>O trabalho surgiu da seguinte problemática: que meios os deficientes visuais dispõem para enfrentar dificuldades de locomoção e risco de acidentes em seu cotidiano? Diante desta questão, com o objetivo de impactar positivamente sobre essa problemática, propõe-se a disseminação do projeto: Sistema de navegação assistiva para deficientes visuais, visando mais independência, segurança e inclusão para estas pessoas.</p>
-  
-        <h4>2. OBJETIVO</h4>
-        <p>Desenvolver um dispositivo de baixo custo que ajude pessoas com deficiência visual a se deslocarem por ambientes internos, utilizando sensores para detectar obstáculos e fornecer feedback auditivo em tempo real.</p>
-  
-        <h5>3. METODOLOGIA</h5>
-        <ul>
-          <li>Levantamento de ideias até a escolha final do projeto;</li>
-          <li>Alinhamento de objetivos do projeto;</li>
-          <li>Distribuição de funções entre os membros da equipe;</li>
-          <li>Listagem e revisão dos componentes necessários, assim como do orçamento do projeto;</li>
-          <li>Criação de uma rifa para levantar recursos para compra dos materiais necessários;</li>
-          <li>Entendimento do funcionamento de cada componente eletrônico utilizado;</li>
-          <li>Montagem do circuito virtual no Tinkercad;</li>
-          <li>Treinamento da equipe para uso da plataforma virtual Tinkercad;</li>
-          <li>Desenvolvimento e simulação do código do projeto;</li>
-          <li>Montagem do circuito físico e teste com protoboard;</li>
-          <li>Desenvolvimento e carregamento do código no Arduino;</li>
-          <li>Fixação dos dispositivos em estrutura apropriada para uso;</li>
-          <li>Finalização da documentação e preparação da apresentação na feira de ciências;</li>
-          <li>Montagem de cenário de testes com obstáculos de papelão;</li>
-          <li>Teste de precisão com sensor ultrassônico;</li>
-          <li>Avaliação do funcionamento e observação de melhorias.</li>
-        </ul>
-  
-        <h6>3.1 MATERIAIS NECESSÁRIOS PARA A CONSTRUÇÃO DO KIT</h6>
-        <ul>
-          <li>Kit Arduino Uno</li>
-          <li>Notebook</li>
-          <li>Sensor ultrassônico (HC-SR04)</li>
-          <li>Buzzer ou speaker</li>
-          <li>Fios de conexão</li>
-          <li>Protoboard</li>
-          <li>Fonte de alimentação (bateria 9V)</li>
-          <li>Fita métrica</li>
-          <li>Caixa ou suporte para acomodação</li>
-        </ul>
-  
-        <h6>3.2 FUNCIONAMENTO DO PROJETO</h6>
-        <p>
-          O sensor ultrassônico é colocado na frente do usuário e emite ondas sonoras que refletem em objetos. O Arduino processa os dados e emite sons diferentes conforme a distância:
+      <h3>1.	INTRODUÇÃO</h3>
+      <p>Em dias contemporâneos as evoluções tecnológicas oportunizam acesso a informação, novas formas de comunicação, escolarização e inclusão a pessoas com deficiência, proporcionando acessibilidade e mais autonomia no seu cotidiano. A tecnologia assistiva surge como uma estratégia que visa possibilitar melhorias na qualidade de vida e aprendizagem em especial a pessoas com deficiência visual (Bruno; Nascimento,2019). Pensando nisto, foi idealizado um projeto que auxiliasse pessoas com deficiência visual em seu dia a dia, através de um dispositivo que ajuda no deslocamento, utilizando sensores para detectar obstáculos.
+        O trabalho surgiu da seguinte problemática: que meios os deficientes visuais dispõem para enfrentar dificuldades de locomoção e risco de acidentes em seu cotidiano? Diante desta questão, com o objetivo de impactar positivamente sobre essa problemática, propõe-se a disseminação do projeto: Sistema de navegação assistiva para deficientes visuais, visando mais independência, segurança e inclusão para estas pessoas.
+         </p>
+      <h4>2.	OBJETIVO:</h3>
+      <p>Desenvolver um dispositivo de baixo custo que ajude pessoas com deficiência visual a se deslocarem por ambientes internos, utilizando sensores para detectar obstáculos e fornecer feedback auditivo em tempo real. </p>
+      <p>No percurso deste trabalho foram realizadas algumas atividades para assim se chegar a um produto final (construção de um equipamento para deficientes visuais), as quais serão apresentadas por tópicos a seguir:
+      <h5>3.	METODOLOGIA</h5>
+          Planejamento e Discussão em Equipe
+        •	Levantamento de ideias até a escolha final do projeto;
+        •	Alinhamento de objetivos do projeto;
+        •	Distribuição de funções entre os membros da equipe;
+        •	Listagem e revisão dos componentes necessários, assim como do orçamento do projeto;
+         
+        •	Criação de uma rifa para levantar recursos para compra dos materiais Necessários;
+        	Entendendo o funcionamento de cada componente eletrônico utilizado no projeto, assim como montagem do Circuito Virtual (Tinkercad);
+        •	Estudo aprofundado pela equipe do funcionamento de cada dispositivo do kit de robótica utilizado no projeto;
+        •	Treinamento da equipe para uso da plataforma virtual Tinkercad;
+        •	Montagem do circuito usando os componentes virtuais;
+        •	Desenvolvendo o código do projeto para o teste virtual;
+        •	Simulação do projeto no ambiente virtual Tinkercad;
+        	Montagem do Circuito Físico;
+        •	Montagem do circuito usando os componentes reais;
+        •	Reproduzir o circuito virtual no protoboard com os componentes reais;
+        •	Verificar conexões, alimentação e organização;
+        •	Desenvolver e carregar o código na plataforma do Arduino;
+        •	Fixar a estrutura dos dispositivos em uma caixa e encaixar na cinta ou em outro dispositivo para o usuário utilizar o equipamento;
+        Finalização da documentação do projeto e preparação do Cenário de Teste;
+        •	Finalização da documentação do projeto com toda sua estrutura;
+        •	Criação do Banner de apresentação, assim como o designer da blusa para o projeto;
+        •	Preparação da equipe para a apresentação na feira de ciências e tecnologia;
+        •	Definição da área de testes (espaço livre de obstáculos fixos);
+        •	Montagem dos obstáculos com caixas de papelão;
+        •	Colocar objetos a diferentes distâncias para testar a precisão do sensor ultrassônico;
+        	Testes em Ambiente com Obstáculos;
+        •	Criação de obstáculos para o teste usando caixas de papelão;
+        •	Avaliar o funcionamento do projeto em um cenário real (teste na escola);
+        •	Observar respostas do sistema e possíveis melhorias.
         </p>
-        <ul>
-          <li>Som contínuo: obstáculo muito próximo (&lt; 20 cm);</li>
-          <li>Som intermitente: distância intermediária (20 cm a 1 metro);</li>
-          <li>Silêncio ou som leve: caminho livre (&gt; 1 metro).</li>
-        </ul>
-        <p>O usuário carrega o dispositivo e o feedback auditivo auxilia no ajuste da direção ao se mover.</p>
-  
-        <h4>4. RESULTADOS</h4>
-        <p>O projeto demonstrou como a tecnologia pode melhorar a qualidade de vida de deficientes visuais. A construção do kit integrou teoria e prática, mostrando sua relevância interdisciplinar e social. O kit destacou-se como recurso acessível, com possibilidades de melhorias futuras.</p>
-        <p>Entre as propostas de evolução estão:</p>
-  
-        <h5>5. MELHORIAS NO PROJETO</h5>
-        <h6>1. Localização do Deficiente Visual</h6>
-        <ul>
-          <li>Módulo GPS (NEO-6M)</li>
-          <li>Módulo Bluetooth (HC-05 ou HC-06)</li>
-          <li>Bateria adicional</li>
-        </ul>
-        <p>O GPS rastreia a localização e o Bluetooth envia os dados para um app.</p>
-  
-        <h6>2. Botão SOS</h6>
-        <ul>
-          <li>Botão de emergência</li>
-          <li>Módulo Bluetooth ou GSM</li>
-          <li>Alimentação extra</li>
-        </ul>
-        <p>Ao pressionar o botão, o sistema envia alerta e localização.</p>
-  
-        <h6>3. Integração das Melhorias</h6>
-        <ul>
-          <li>Envio de alerta com localização GPS</li>
-          <li>Confirmação sonora do botão SOS</li>
-          <li>Testes em cenários reais</li>
-        </ul>
-  
-        <h4>REFERÊNCIAS BIBLIOGRÁFICAS</h4>
-        <p>BRUNO, M.M.G.; NASCIMENTO, R. A. L.D. Política de acessibilidade: o que dizem as pessoas com deficiência visual. Educação e Realidade, Porto Alegre, v. 44, n. 1, p. 1-15, 2019.</p>
-        <p>PONTES, P. R. S. Robótica educacional: Uma abordagem prática no ensino de lógica de programação. Tocantins: Vozes, 2021.</p>
-        <p>Secretaria de Educação do Estado do Paraná: <a href="https://aluno.escoladigital.pr.gov.br/robotica" target="_blank">https://aluno.escoladigital.pr.gov.br/robotica</a></p>
-  
-        <div style="text-align: center; margin-top: 30px;">
-          <a href="https://forms.gle/Jpku3nUMBvyR7WjWA" target="_blank" style="display: inline-block; background-color: #0072ff; color: white; padding: 15px 30px; font-size: 1.2em; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: background 0.3s;">
-            Envie sua Opinião
-          </a>
-        </div>
-      </section>
-    </main>
-  
-    <footer>
-      <p>&copy; 2025 Sistema de Navegação Assistiva. Todos os direitos reservados.</p>
-    </footer>
-  </body>
-  </html>
-  
+      <h6>3.1	MATERIAIS NECESSÁRIOS PARA A CONSTRUÇÃO DO KIT:</h6>
+      <p>
+        •	Kit Arduino Uno;
+        •	Notebook;
+        •	Sensor ultrassônico (HC-SR04) para detecção de obstáculos;
+        •	Buzzer ou speaker para feedback sonoro;
+         
+        •	Fios de conexão;
+        •	Protoboard;
+        •	Alimentação (bateria ou fonte de 9V).
+        •	Fita métrica (para ajustar o alcance dos sensores);
+        •	Caixa ou suporte para acomodar os componentes;
+      </p>
+      <h7>3.2	FUNCIONAMENTO DO PROJETO E APRESENTAÇÃO DE CADA ITEM.</h7>
+      <p>Detecção de obstáculos: O sensor ultrassônico é colocado na frente do usuário, e ele emite ondas sonoras que são refletidas por objetos à sua frente. O sensor calcula a distância até o obstáculo com base no tempo que a onda leva para voltar.
+
+        1.	Feedback sonoro: O Arduino processa os dados do sensor e emite diferentes sons através do buzzer ou speaker para alertar o usuário sobre a proximidade dos obstáculos:
+        
+        •	Som contínuo: Quando o obstáculo está muito próximo (por exemplo, a menos de 20 cm).
+        •	Som intermitente (pulsante): Para distâncias intermediárias (por exemplo, entre 20 cm e 1 metro).
+        •	Silêncio ou som leve: Quando o caminho está livre ou a distância é grande (mais de 1 metro).
+        
+        2.	Funcionamento: O usuário pode carregar o dispositivo (por exemplo, em uma mochila ou cinto) e se movimentar pela sala ou corredor. À medida que se aproxima de um obstáculo, o feedback sonoro muda, ajudando a pessoa a ajustar sua direção.
+        </p>
+      <h8>4.	RESULTADOS</h8>
+      <p>Esse projeto é simples, prático e pode ser uma excelente forma de demonstrar como a tecnologia pode ser usada para melhorar a qualidade de vida de pessoas com deficiência visual. Por meio das ações pretendidas com o trabalho, o projeto proposto visa unir a teoria estudada durante os dias trabalhados com a montagem do dispositivo, relacionando assim a teoria de conceitos e do conteúdo teórico, a prática (na montagem do kits e reconhecimento de cada componente que será utilizado). Além disso, possibilita também uma visão diferenciada observando a relevância do projeto e interdisciplinaridade entre as demais disciplinas, reconhecendo também a questão principal que é a inclusão e o respeito a pessoas com necessidades especiais. A montagem do kit também possibilitou um novo recurso para deficientes visuais, no qual se destacou como positiva, podendo também haver novas melhorias
+        Com os estudos e pesquisas realizados nestes meses podemos aprimorar o kit para Versões futuras, sendo elas: Sistema de Navegação Assistiva para Deficientes Visuais, podemos adicionar duas funcionalidades importantes: localização do deficiente e um botão de SOS para situações de emergência.
+        </p>
+        <h8>MELHORIAS NO PROJETO PARA O FUTURO</h8>
+      <p>
+        1.	Localização do Deficiente Visual
+        
+        Para adicionar a funcionalidade de localização do deficiente, podemos usar um módulo GPS. Esse módulo permitirá rastrear a posição geográfica do usuário e, por exemplo, enviar a localização via Bluetooth para um dispositivo móvel ou para um servidor.
+        
+        Componentes necessários:
+        
+        •	Módulo GPS (como o NEO-6M): Para rastrear a localização do usuário.
+        •	Módulo Bluetooth (HC-05 ou HC-06): Para enviar a localização para um smartphone ou outro dispositivo.
+        •	Bateria adicional: Para alimentar os novos componentes.
+         
+        Como funciona:
+        
+        •	O módulo GPS irá ler as coordenadas de latitude e longitude, e, a cada intervalo de tempo, o Arduino pode atualizar essas coordenadas.
+        •	Com o módulo Bluetooth, o Arduino pode enviar essas coordenadas a um aplicativo no smartphone, permitindo que uma pessoa responsável saiba a localização do deficiente em tempo real.
+        
+        2.	Botão SOS
+        
+        O botão SOS serve como uma medida de segurança adicional para alertar quando o usuário estiver em perigo ou precisar de ajuda. Esse botão pode enviar um sinal de emergência para uma pessoa responsável, um centro de apoio ou até enviar uma mensagem automática.
+        
+        Componentes necessários:
+        
+        •	Botão de emergência: Um botão simples (push-button) para enviar um sinal de SOS.
+        •	Módulo de comunicação (Bluetooth ou GSM): Para enviar o alerta.
+        •	Alimentação adicional: Para suportar o módulo de comunicação extra.
+        
+        Como funciona:
+        
+        •	Quando o botão SOS for pressionado, o Arduino envia um sinal de alerta via Bluetooth ou GSM.
+        •	Caso use o Bluetooth, o sinal pode ser enviado para um aplicativo no smartphone, alertando alguém próximo sobre a situação de emergência.
+        •	Se usar o módulo GSM, é possível enviar um SMS ou realizar uma chamada telefônica automaticamente.
+        
+        3.	Integração das Melhorias
+        
+        •	Localização com GPS: Você pode integrar a localização com a funcionalidade do botão SOS. Por exemplo, ao pressionar o botão SOS, o sistema pode enviar não apenas o alerta, mas também a localização do usuário em tempo real para um responsável.
+        •	Feedback Audível para o SOS: Quando o botão SOS for pressionado, você pode adicionar um feedback auditivo (como um som contínuo no buzzer) para confirmar que o alerta foi enviado.
+         
+        Considerações Finais:
+        
+        •	Alimentação: Como estamos adicionando novos módulos (GPS, Bluetooth, e possivelmente GSM), o consumo de energia será maior. Certifique-se de usar uma fonte de alimentação adequada, como baterias recarregáveis.
+        •	Testes: Realize testes em diferentes cenários para garantir que o sistema funcione corretamente, tanto no aspecto de localização quanto no envio do alerta SOS.
+        
+        Benefícios das Melhorias:
+        
+        •	Segurança: O botão SOS aumenta a segurança do usuário, permitindo uma forma rápida de pedir ajuda.
+        •	Autonomia: A localização em tempo real proporciona mais independência para o deficiente visual, permitindo que seus responsáveis saibam onde ele está.
+        •	Tecnologia acessível: A utilização de sensores, GPS e Bluetooth pode ser uma solução simples e eficaz para melhorar a qualidade de vida de pessoas com deficiência visual.
+        Com essas melhorias, o projeto se torna ainda mais completo e pode ser muito útil na vida cotidiana de deficientes visuais, proporcionando maior segurança e autonomia.
+        </p>
+        <h8>REFERÊNCIAS BIBLIOGRÁFICAS</h8>
+      <p>BRUNO, M.M.G.; NASCIMENTO, R. A. L.D. Politica de acessibilidade :o que dizem as pessoas com deficiência visual . Educação e realidade , Porto alegre, v. 44, n. 1, p. 1- 15, 2019.
+        PONTES, P. R. S. Robótica educacional; Uma abordagem prática no ensino de lógica de programação. Tocantins: Vozes, 2021.
+        Diretoria de Tecnologia e inovação da Secretaria de Educação do Estado do Paraná: https://aluno.escoladigital.pr.gov.br/robotica.
+        </p>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://forms.gle/Jpku3nUMBvyR7WjWA" target="_blank" style="display: inline-block; background-color: #0072ff; color: white; padding: 15px 30px; font-size: 1.2em; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: background 0.3s;">
+          <i class="fas fa-poll"></i> Envie sua Opinião
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sistema de Navegação Assistiva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+        document.getElementById(button.getAttribute('data-tab')).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
